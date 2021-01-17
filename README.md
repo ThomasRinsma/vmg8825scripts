@@ -3,6 +3,8 @@ These were made for / tested on the `VMG8825-T50` device for the Dutch market, b
 
 These are hacky scripts, so no guarantees. I'm also not keeping this up to date so the underlying vulnerabilities might be patched by the time you read this.
 
+*All unpatched vulnerabilities included here are local and authenticated-only. They allow you to get shell access to your own device, but should not increase the attack-surface from WAN or from LAN, as long as your password is secure.*
+
 ## Authenticated web-interface command injections 
 The majority of the code in the authenticated PoCs below is needed for setting up a proper session with the device's web-interface. For some reason this uses a weird AES-based protocol. Yay for security through obscurity!
 
