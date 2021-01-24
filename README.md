@@ -14,6 +14,8 @@ Make sure to `pip install cryptodome` for these.
 	- PoC for authenticated command injection in diagnostics tools (`/cgi-bin/DAL?oid=PINGTEST`)
 	- results in the root password and an SSH server running on port 2222. i.e. a root shell.
 	- still works as of January 2021, firmware `V5.50(ABPY.1)b15_20201207` 
+- `cmd_injection_ping2.py`
+	- Same as above, but a different payload: opens a connect-back shell to port 13373 on your machine. Make sure to open a listener: `nc -lvp 13373`
 - `cmd_injection_wol.py`
 	- PoC for authenticated command injection in Wake-on-LAN command (`/cgi-bin/Home_Networking?action=WOLCommand`).
 	- unpolished, edit the file first! By default it opens a connect-back shell on port 1337, so make sure to start a netcat listener.
