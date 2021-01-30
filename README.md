@@ -37,6 +37,11 @@ These are the relevant scripts. Bypassing ASLR is left as an exercise for the re
 
 ## Other
 
+- `decrypt.c`
+	- Allows one to decrypt `_encrypt_` strings from the config if the root password is known. Useful for decrypting the `supervisor` (default) password.
+
+---
+
 A combinations of vulnerabilities / design flaws used to allow for [authenticated root access](https://th0mas.nl/2020/03/26/getting-root-on-a-zyxel-vmg8825-t50-router/) in firmware `V5.50(ABPY.0)b12_20190730`:
 - The DLNA server is running as root and follows symlinks on ext2 partitions on connected USB drives
 - The device's backed-up config file could be edited to enable certain management features and enable SSH access
