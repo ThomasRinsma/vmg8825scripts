@@ -39,7 +39,10 @@ These are the relevant scripts. Bypassing ASLR is left as an exercise for the re
 
 - `decrypt.c`
 	- Allows one to decrypt `_encrypt_` strings from the config if the root password is known. Useful for decrypting the `supervisor` (default) password.
-
+- `backup_decrypt.sh`
+	- Allows to decrypt the configuration backup file if the root password is known. Useful to be able to edit the configuration exported from the web-interface.
+- `backup_encrypt.sh`
+	- Allows to encrypt a configuration json file if the root password is known. Useful to be able to restore a modified configuration through the web-interface.
 ---
 
 A combinations of vulnerabilities / design flaws used to allow for [authenticated root access](https://th0mas.nl/2020/03/26/getting-root-on-a-zyxel-vmg8825-t50-router/) in firmware `V5.50(ABPY.0)b12_20190730`:
