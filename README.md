@@ -5,6 +5,15 @@ These are hacky scripts, so no guarantees. I'm also not keeping this up to date 
 
 *All unpatched vulnerabilities included here are local and authenticated-only. They allow you to get shell access to your own device, but should not increase the attack-surface from WAN or from LAN, as long as your password is secure.*
 
+### Related work
+
+Some other work that might be useful:
+
+- https://www.rapid7.com/db/modules/exploit/linux/http/zyxel_lfi_unauth_ssh_rce/
+- https://github.com/boginw/zyxel-vmg8825-keygen
+- https://github.com/johnzuidweg/Zyxel-supervisor
+- https://github.com/NezbednikSK/VMGtoolkit
+
 ## Authenticated web-interface command injections 
 The majority of the code in the authenticated PoCs below is needed for setting up a proper session with the device's web-interface. For some reason this uses a weird AES-based protocol. Yay for security through obscurity!
 
